@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+/* .react-multi-carousel-item {
+  flex: 0 0 1!important;
+  margin: 5px;
+} */
+/* .test-class{
+  transition: 5s;
+} */
+
+.hide-class{
+  transition: 3s;
+  visibility: hidden;
+}
+.show-class{
+  animation-duration: 2s;
+  /* animation-name: slidein; */
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  background-color: red;
+  height: 30px;
+  width: 50%;
+}
+/* @keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 0%;
+  }
+
+  to {
+    margin-right: 50%;
+    width: 50%;
+  }
+} */

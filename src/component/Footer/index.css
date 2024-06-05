@@ -1,0 +1,32 @@
+.the-footer-row{
+    font-family: 'Rajdhani',sans-serif;
+    padding: 8%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    overflow: hidden;
+    text-align: center;
+}
+.the-footer-row .footer-text h1{
+    font-family: 'Rajdhani',sans-serif;
+    font-weight: 600;
+    font-size: 150px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+.footer-info-row .footer-title{
+    text-align: left;
+    font-family: 'Rajdhani',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer-info-row a{
+    display: block !important;
+    text-align: left;
+    font-family: 'Rajdhani',sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}

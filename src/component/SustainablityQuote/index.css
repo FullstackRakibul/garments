@@ -1,0 +1,35 @@
+.sustainabilty-main-row{
+    font-family: 'Rajdhani',sans-serif;
+    padding: 8%;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    text-align: center;
+    overflow: hidden;
+}
+/* .sustainability-col-quote{
+    margin-bottom: 10vw;
+} */
+.sustainabilty-main-row .quote-row{
+    margin-bottom: 4vw;
+}
+.sustainabilty-main-row .quote-row h2{
+    font-family: 'Rajdhani',sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+}
+.sustainabilty-main-row .gallery-row .gallery-col .ant-col-8{
+    height: 25vw;
+    width: 33.33%;
+    overflow: hidden;
+}
+.sustainabilty-main-row .gallery-row .gallery-col .ant-col-8 img{
+  margin: 2% 4%;
+  height: 96%;
+  width: 92%;
+}
+.explore-sustainability{
+    margin-top: 6%;
+}
+.sustainabilty-main-row div[class*=box]{
+    height: 33%;
+}

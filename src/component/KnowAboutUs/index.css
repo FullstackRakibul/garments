@@ -1,0 +1,12 @@
+.know-about-us-row{
+    font-family: 'Rajdhani',sans-serif;
+    padding: 8%;
+    padding-top: 5%;
+    text-align: center;
+    overflow: hidden;
+}
+.know-about-us-row h2{
+    font-family: 'Rajdhani',sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+}
