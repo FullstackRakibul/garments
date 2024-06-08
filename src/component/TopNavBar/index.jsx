@@ -1,50 +1,48 @@
-import React,{Fragment} from 'react'
-import {Row,Col,Menu} from 'antd'
-import {Link} from 'react-router-dom'
-import Logo from '../../assets/images/hglogo.png'
-import { useLocation } from 'react-router-dom'
+import React, { Fragment } from "react";
+import { Row, Col, Menu } from "antd";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/images/egl-logo.png";
+import { useLocation } from "react-router-dom";
 const SubMenu = Menu.SubMenu;
 
-const TopNavBar=(props)=>{
-    const location=useLocation();
-    const {pathname}=location
-    return(
-        <Fragment>
-            <title>Ha-Meem - {props.title}</title>
-            <Row
+const TopNavBar = (props) => {
+  const location = useLocation();
+  const { pathname } = location;
+  return (
+    <Fragment>
+      <title>Ha-Meem - {props.title}</title>
+      <Row
+        style={{
+          height: "60px",
+          display: "flex",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <Col span={4}>
+          <img
             style={{
-                height:"60px",
-                display:"flex",
-                alignItems:"center",
-                textAlign:"center",
+              height: "100%",
+              width: "120px",
             }}
-            >
-                <Col 
-                span={4}
-                >
-                    <img 
-                    style={{
-                        height:"100%",
-                        width:"70px"
-                    }}
-                    src={Logo}
-                    />
-                </Col>
-                <Col
-                span={20}
-                style={{
-                    padding:"0px"
-                }}
-                >
-                    <Menu
-                    // theme='light'
-                    style={{
-                        margin:"0px",
-                        height:"60px"
-                    }}
-                    mode="horizontal"
-                    >
-                        {/* <SubMenu
+            src={Logo}
+          />
+        </Col>
+        <Col
+          span={20}
+          style={{
+            padding: "0px",
+          }}
+        >
+          <Menu
+            // theme='light'
+            style={{
+              margin: "0px",
+              height: "60px",
+            }}
+            mode="horizontal"
+          >
+            {/* <SubMenu
                         title={
                         <strong>
                             HOME
@@ -67,25 +65,17 @@ const TopNavBar=(props)=>{
                                 </Link>
                             </Menu.Item>
                         </SubMenu> */}
-                        <Menu.Item
-                        className='menu-no-child'
-                        >
-                            <Link to="/">
-                                <strong>
-                                    Home
-                                </strong>
-                            </Link>
-                        </Menu.Item>
-                        <Menu.Item
-                        className='menu-no-child'
-                        >
-                            <Link to="/about">
-                                <strong>
-                                    About Us
-                                </strong>
-                            </Link>
-                        </Menu.Item>
-                        {/* <SubMenu
+            <Menu.Item className="menu-no-child">
+              <Link to="/">
+                <strong>Home</strong>
+              </Link>
+            </Menu.Item>
+            <Menu.Item className="menu-no-child">
+              <Link to="/about">
+                <strong>About Us</strong>
+              </Link>
+            </Menu.Item>
+            {/* <SubMenu
                         title={
                         <strong>
                             PAGES
@@ -118,74 +108,42 @@ const TopNavBar=(props)=>{
                                 </Link>
                             </Menu.Item>
                         </SubMenu> */}
-                        <SubMenu
-                        title={
-                        <strong>
-                            industries
-                        </strong>
-                        }
-                        >
-                            <Menu.Item
-                            className="child-menu-item"
-                            >
-                                <Link to='/apparel'>
-                                    Apparel
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item
-                            className="child-menu-item"
-                            >
-                                <Link to='/laundry'>
-                                    Laundry
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item  className="child-menu-item">
-                                <Link to='/fabricmill'>
-                                    Fabric Mill
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item  className="child-menu-item">
-                                <Link to='/trimaccessories'>
-                                    Trims & Accessories Unit
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item  className="child-menu-item">
-                                <Link to='/embroidery'>
-                                    Embroidery Unit
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item  className="child-menu-item">
-                                <Link to='/printingunit'>
-                                    Printing Unit
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item  className="child-menu-item">
-                                <Link to='/transportation'>
-                                    Transportation Unit
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item  className="child-menu-item">
-                                <Link to='/'>
-                                    C & F
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item  className="child-menu-item">
-                                <Link to='/printmedia'>
-                                    Print Media
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item  className="child-menu-item">
-                                <Link to='/electronicsmedia'>
-                                    Electronics Media
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item  className="child-menu-item">
-                                <Link to='/teastate'>
-                                    Tea State
-                                </Link>
-                            </Menu.Item>
-                        </SubMenu>
-                        {/* <SubMenu
+            <SubMenu title={<strong>industries</strong>}>
+              <Menu.Item className="child-menu-item">
+                <Link to="/apparel">Apparel</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/laundry">Laundry</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/fabricmill">Fabric Mill</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/trimaccessories">Trims & Accessories Unit</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/embroidery">Embroidery Unit</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/printingunit">Printing Unit</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/transportation">Transportation Unit</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/">C & F</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/printmedia">Print Media</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/electronicsmedia">Electronics Media</Link>
+              </Menu.Item>
+              <Menu.Item className="child-menu-item">
+                <Link to="/teastate">Tea State</Link>
+              </Menu.Item>
+            </SubMenu>
+            {/* <SubMenu
                         title={
                         <strong>
                             PROJECTS
@@ -213,7 +171,7 @@ const TopNavBar=(props)=>{
                                 </Link>
                             </Menu.Item>
                         </SubMenu> */}
-                        {/* <SubMenu
+            {/* <SubMenu
                         title={
                         <strong>
                             BLOG
@@ -236,27 +194,20 @@ const TopNavBar=(props)=>{
                                 </Link>
                             </Menu.Item>
                         </SubMenu> */}
-                        <Menu.Item
-                        className='menu-no-child'
-                        >
-                            <Link to="/sustainability">
-                                <strong>
-                                sustainability
-                                </strong>
-                            </Link>
-                        </Menu.Item>
-                        <Menu.Item
-                        className='menu-no-child'
-                        >
-                            <Link to='/contact'>
-                                <strong>CONTACT</strong>
-                            </Link>
-                        </Menu.Item>
-                    </Menu>
-                </Col>
-                
-            </Row>
-        </Fragment>
-    )
-}
+            <Menu.Item className="menu-no-child">
+              <Link to="/sustainability">
+                <strong>sustainability</strong>
+              </Link>
+            </Menu.Item>
+            <Menu.Item className="menu-no-child">
+              <Link to="/contact">
+                <strong>CONTACT</strong>
+              </Link>
+            </Menu.Item>
+          </Menu>
+        </Col>
+      </Row>
+    </Fragment>
+  );
+};
 export default TopNavBar;

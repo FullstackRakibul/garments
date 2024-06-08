@@ -1,26 +1,21 @@
-import React,{Fragment} from 'react'
-import {Row,Col} from 'antd';
-import { Player, ControlBar,PlayToggle, ForwardControl } from 'video-react';
-import Video from '../../assets/video/video.mp4'
+import React, { Fragment } from "react";
+import { Row, Col } from "antd";
+import { Player, ControlBar, PlayToggle, ForwardControl } from "video-react";
+import Video from "../../assets/video/video.mp4";
 
-import './index.css'
-import "video-react/dist/video-react.css"
+import "./index.css";
+import "video-react/dist/video-react.css";
 
-
-class HeroBackground extends React.Component{
-    render(){
-        return(
-            <Fragment>
-                <Row
-                >
-                    <Col
-                    span={24}
-                    className="hero-bg-col"
-                    >
-                        <video autoPlay muted loop id="myVideo">
-                            <source src={Video} type="video/mp4"/>
-                        </video>
-                        {/* <Player
+class HeroBackground extends React.Component {
+  render() {
+    return (
+      <Fragment>
+        <Row>
+          <Col span={24} className="hero-bg-col">
+            <video autoPlay muted loop id="myVideo">
+              <source src={Video} type="video/mp4" />
+            </video>
+            {/* <Player
                         autoPlay={true}
                         fluid={false}
         
@@ -42,10 +37,10 @@ class HeroBackground extends React.Component{
                             <PlayToggle />
                         </ControlBar>
                         </Player> */}
-                    </Col>
-                </Row>
-            </Fragment>
-        )
-    }
+          </Col>
+        </Row>
+      </Fragment>
+    );
+  }
 }
-export default HeroBackground
+export default HeroBackground;
