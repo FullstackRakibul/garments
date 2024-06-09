@@ -5,6 +5,9 @@ import Slider01 from "../../assets/images/slider/slider01.jpg";
 import Slider02 from "../../assets/images/slider/slider02.jpg";
 import Slider03 from "../../assets/images/slider/slider03.jpg";
 import Slider04 from "../../assets/images/slider/slider04.jpg";
+import Slider05 from "../../assets/images/slider/slider05.jpg";
+import Slider06 from "../../assets/images/slider/slider06.jpg";
+import Slider07 from "../../assets/images/slider/slider07.jpg";
 
 const contentStyle = {
   margin: 0,
@@ -51,7 +54,7 @@ const HeroSectionSlider = () => {
             width="100%"
             //backgroundSize="cover"
             style={contentStyle}
-            src={Slider03}
+            src={Slider06}
           />
         </div>
         <div>
@@ -59,7 +62,15 @@ const HeroSectionSlider = () => {
             width="100%"
             //backgroundSize="cover"
             style={contentStyle}
-            src={Slider04}
+            src={Slider05}
+          />
+        </div>
+        <div>
+          <Image
+            width="100%"
+            //backgroundSize="cover"
+            style={contentStyle}
+            src={Slider07}
           />
         </div>
       </Carousel>
