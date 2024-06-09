@@ -13,6 +13,8 @@ import SustainablityQuote from "../../component/SustainablityQuote";
 import TheLatest from "../../component/TheLatest";
 import FooterComponent from "../../component/Footer";
 import HeroSectionSlider from "../../component/HeroSectionSlider";
+import GarmentsBirdView from "../../component/Home/GarmentsBirdView";
+import IconsSectionServiceBox from "../../component/Home/IconsSectionServiceBox";
 const { Header, Content, Footer } = Layout;
 
 class HomePage extends React.Component {
@@ -37,6 +39,8 @@ class HomePage extends React.Component {
           <Content>
             {/* <HeroBackground /> */}
             <HeroSectionSlider />
+            <IconsSectionServiceBox />
+            <GarmentsBirdView />
             <GetKnowAbout />
             <OurBrand />
             <OurOverview />

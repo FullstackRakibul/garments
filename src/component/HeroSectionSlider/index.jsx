@@ -8,7 +8,7 @@ import Slider04 from "../../assets/images/slider/slider04.jpg";
 
 const contentStyle = {
   margin: 0,
-  height: "500px",
+  height: "550px",
   width: "100%",
   color: "#fff",
   lineHeight: "160px",
@@ -24,9 +24,9 @@ const HeroSectionSlider = () => {
       <Carousel
         arrows
         autoplay
-        autoplaySpeed={3000}
+        autoplaySpeed={2500}
         infinite="true"
-        dotPosition="right"
+        dotPosition="bottom"
       >
         {/* <div>
           <img
