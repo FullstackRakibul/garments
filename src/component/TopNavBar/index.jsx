@@ -108,7 +108,7 @@ const TopNavBar = (props) => {
                                 </Link>
                             </Menu.Item>
                         </SubMenu> */}
-            <SubMenu title={<strong>industries</strong>}>
+            {/* <SubMenu title={<strong>industries</strong>}>
               <Menu.Item className="child-menu-item">
                 <Link to="/apparel">Apparel</Link>
               </Menu.Item>
@@ -142,7 +142,7 @@ const TopNavBar = (props) => {
               <Menu.Item className="child-menu-item">
                 <Link to="/teastate">Tea State</Link>
               </Menu.Item>
-            </SubMenu>
+            </SubMenu> */}
             {/* <SubMenu
                         title={
                         <strong>
