@@ -15,6 +15,8 @@ import FooterComponent from "../../component/Footer";
 import HeroSectionSlider from "../../component/HeroSectionSlider";
 import GarmentsBirdView from "../../component/Home/GarmentsBirdView";
 import IconsSectionServiceBox from "../../component/Home/IconsSectionServiceBox";
+import { BranchesOutlined } from "@ant-design/icons";
+import OurClient from "../../component/Home/OurClient";
 const { Header, Content, Footer } = Layout;
 
 class HomePage extends React.Component {
@@ -42,7 +44,9 @@ class HomePage extends React.Component {
             <IconsSectionServiceBox />
             <GarmentsBirdView />
             <GetKnowAbout />
-            <OurBrand />
+            <OurClient />
+            {/* <OurBrand /> */}
+
             <OurOverview />
             <OverviewCountup />
             <KnowAboutUs />
