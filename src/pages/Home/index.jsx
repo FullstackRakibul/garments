@@ -43,7 +43,7 @@ class HomePage extends React.Component {
             <HeroSectionSlider />
             <IconsSectionServiceBox />
             <GarmentsBirdView />
-            <GetKnowAbout />
+            {/* <GetKnowAbout /> */}
             <OurClient />
             {/* <OurBrand /> */}
 
