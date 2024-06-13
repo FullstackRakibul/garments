@@ -19,7 +19,7 @@ const onFinishFailed = (errorInfo) => {
 const ContactMap = () => {
   return (
     <>
-      <section className="container mx-auto p-20 ">
+      {/* <section className="container mx-auto p-20 ">
         <Row gutter={16} className="flex justify-between items-center">
           <Col span={10} className="flex flex-col p-24 justify-center">
             <div className="mb-4">
@@ -81,8 +81,8 @@ const ContactMap = () => {
             </div>
           </Col>
         </Row>
-      </section>
-      <section className="container mx-auto p-6">
+      </section> */}
+      <section className="container mx-auto">
         <Row>
           <div>
             <h3 className="text-xl">Find us on Map</h3>

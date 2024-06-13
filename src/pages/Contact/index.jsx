@@ -5,6 +5,7 @@ import PageHeroBg from "../../component/HeroBg";
 import ContactInfo from "../../component/ContactInfo";
 import FooterComponent from "../../component/Footer";
 import ContactMap from "../../component/ui/ContactMap/index.jsx";
+import ContactForm from "../../component/ui/ContactForm/index.jsx";
 const { Header, Content, Footer } = Layout;
 
 class ContactPages extends React.Component {
@@ -26,6 +27,7 @@ class ContactPages extends React.Component {
           </Header>
           <Content>
             <PageHeroBg bgTitle="Contact" />
+            <ContactForm />
             <ContactMap />
             <ContactInfo />
           </Content>
